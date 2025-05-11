@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        
+      <div class="left-section">
+        <h1>
+         <div class="left-section">
+  <div class="menu-icon" id="menu-icon">☰</div>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" width="200px" height="40px" class="youtube-logo">
+  </div>
+</div>
+        
+      </div>
+      <div class="center-section">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="search-btn">🔍</button>
+      </div>
+      <br>
+      <div class="right-section">
+        </h1>
+      </div>
+    </header>
+
+    <!-- Page Layout -->
+    <div class="layout">
+      <!-- Sidebar -->
+
+      <!-- Main Content Area -->
+      <main class="video-grid">
+        <div class="video-card" data-id="1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/O1jz7xw9OyQ?si=7eh8mB96hxpSb1MA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="video-info">
+            <h3>
+              Robert Glasper & Cynthia Erivo - God Rest Ye Merry Gentlemen /
+              Carol Of The Bells (Live In London)
+            </h3>
+           
+          </div>
+        </div>
+
+        <div class="video-card" data-id="2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eqUydeLBh1w?si=SCB3gAaYnfq4h1kG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="video-info">
+            <h3>Robert Glasper & Friends @ The Miracle Inglewood</h3>
+          
+          </div>
+        </div>
+
+        <div class="video-card" data-id="3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1G6c_q82_Qs?si=3hjFIdYZmxh8OaR-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="video-info">
+            <h3>The Robert Glasper Experiment - Gonna Be Alright (Live NSJ 2014)</h3>
+            
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

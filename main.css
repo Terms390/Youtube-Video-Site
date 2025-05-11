@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
+  color: #fff;
+}
+
+/* Top Nav */
+.top-nav {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left-section,
+.center-section,
+.right-section {
+  display: flex;
+  align-items: right;
+}
+
+.menu-icon {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.youtube-logo {
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 300px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  border-color: #065fd4;
+  box-shadow: 0 0 0 2px rgba(6, 95, 212, 0.2);
+  width: 400px;
+}
+
+.search-btn {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #eee;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar.collapsed li {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  flex: 1;
+}
+
+/* Video Card */
+.video-card {
+  background-color: #212121;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+iframe {
+  width: 100%;
+  height: 180px;
+  border: none;
+}
+
+/* Video Info */
+.video-info {
+  padding: 10px 15px;
+}
+
+.video-info h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Like Button */
+.like-btn {
+  background-color: #3a3a3a;
+  color: #aaa;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.like-btn.liked {
+  background-color: #ff0000;
+  color: #fff;
+}
+/* Sidebar toggle styles */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar.collapsed li {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.sidebar.collapsed li::after {
+  content: "";
+}
+
+.sidebar li {
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+}
