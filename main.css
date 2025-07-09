@@ -99,7 +99,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
   padding: 30px;
-  flex: 1;
+  flex: wrap;
+  margin-bottom: 1rem;
 }
 
 /* Video Card */
